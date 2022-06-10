@@ -17,7 +17,6 @@ RUN apk add --no-cache git
 RUN apk add --upgrade --no-cache bash curl musl openssh openssh-client gcc build-base
 
 ### Application ###
-
 RUN mkdir /app /code
 
 # Copy the code
