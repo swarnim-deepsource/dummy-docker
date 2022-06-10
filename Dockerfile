@@ -12,7 +12,7 @@ RUN echo "https://mirror.csclub.uwaterloo.ca/alpine/v3.15/main" >/etc/apk/reposi
 RUN echo "https://mirror.csclub.uwaterloo.ca/alpine/v3.15/community" >>/etc/apk/repositories
 RUN apk update
 
-# apk install
+# apk add
 RUN apk add --no-cache git
 RUN apk add --upgrade --no-cache bash curl musl openssh openssh-client gcc build-base
 
