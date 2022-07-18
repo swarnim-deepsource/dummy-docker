@@ -45,7 +45,7 @@ RUN apk update && \
 RUN apk add --no-cache bash curl go build-base musl-dev openssh grep
 
 # Copy the builds
-COPY --from=builder /app /app # skipcq: DOK-DL3023
+COPY --from=builder /app /app # skipcq: DOK-DL3023, DOK-DL3021
 
 #
 # Phase: Analyzer
